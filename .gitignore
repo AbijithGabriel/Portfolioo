@@ -1,0 +1,13 @@
+# Ignore specific files
+file.txt
+index.txt
+style-guide.md
+
+# Ignore files with a specific extension
+*.log
+
+
+
+
+
+
