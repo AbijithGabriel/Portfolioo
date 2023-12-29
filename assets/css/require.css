@@ -29,8 +29,8 @@
   --maximum-yellow-red: hsl(41, 99%, 64%);
   --orange-red_a20: hsla(19, 100%, 55%, 0.2);
   --eerie-black: hsl(210, 11%, 15%);
-  --orange-red: hsl(19, 100%, 55%);
-  --davys-gray: hsl(0, 0%, 33%);
+  --orange-red: hsl(31, 97%, 50%);
+  --davys-gray: hsl(0, 2%, 38%);
   --white_a80: hsla(0, 0%, 100%, 0.8);
   --white_a75: hsla(0, 0%, 100%, 0.75);
   --white_a10: hsla(0, 0%, 100%, 0.1);
@@ -154,20 +154,33 @@ button { cursor : pointer ; }
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 6;
   width: 100%;
   height: 100vh;
   background-color: var(--orange-red);
   display: grid;
   place-items: center;
-}
-.preloader .loader {
-display: none;
+  z-index: 6;
 }
 
-.preloader-circle{
-  
+.preloader.loaded { display: none; }
+
+.preloader-circle {
+  width: 60px;
+  height: 60px;
+  border: 8px solid transparent;
+  border-block-color: var(--white);
+  border-radius: var(--radius-circle);
+  animation: loading 1s linear infinite;
 }
+
+@keyframes loading {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(1turn); }
+}
+
+
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
