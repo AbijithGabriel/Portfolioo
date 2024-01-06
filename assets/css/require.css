@@ -142,7 +142,13 @@ button { cursor : pointer ; }
 /*-----------------------------------*\
   #TYPOGRAPHY
 \*-----------------------------------*/
-
+  .headline-lg {font-size:var(--fs-45)}
+  .headline-md {font-size:var(--fs-38)}
+  .headline-sm {font-size:var(--fs-32)}
+  .title-lg {font-size:var(--fs-27)}
+  .title-md {font-size:var(--fs-26)}
+  .title-sm {font-size : var(--fs-22)}
+  
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
